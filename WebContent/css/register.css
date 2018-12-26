@@ -1,0 +1,117 @@
+@charset "ISO-8859-1";
+	  		.header{
+	  			text-align:center;
+	  			height:150px;
+	  			color:white;
+	  		}
+	  		.roundBorder{
+	  			border: 2px solid lightblue;
+	  			border-radius: 8px;
+	  			background-color:black;
+	  		}
+	  		.form1{
+	  			text-align:center;
+				margin: 12px 10px;
+	  		}
+	  		.input{
+	  			margin: 4px 10px;
+	  		}
+	  		.textbox{
+	  			border: 2px solid lightblue;
+	  			width:450px;
+	  		}
+	  		.input:hover{
+	  			border: 2px solid lightblue;
+	  			background-color:lightblue;
+	  		}
+	  		.hyperlink{
+	  			text-align:center;
+	  		}
+	  		.body{
+	  			background-image: url('http://localhost:8080/TopJobs/images/bg3.jpg');
+	  		}
+	  		.button {
+	  			background-color:black;
+	  			color:white;
+	  			border: 2px solid lightblue;
+	  			border-radius: 8px;
+	  			margin: 4px 10px;
+	  		}
+	  		.button:hover {
+	  			background-color:lightblue;
+	  			color:black;
+	  			border: 2px solid lightblue;
+	  			border-radius: 8px;
+	  			margin: 4px 10px;
+	  		}
+	  		 .container2 {
+				  display: block;
+				  position: relative;
+				  padding-left: 10px;
+				  margin-bottom: 12px;
+				  cursor: pointer;
+				  font-size: 22px;
+				  -webkit-user-select: none;
+				  -moz-user-select: none;
+				  -ms-user-select: none;
+				  user-select: none;
+			}
+
+			/* Hide the browser's default radio button */
+			.container2 input {
+			  position: absolute;
+			  opacity: 0;
+			  cursor: pointer;
+			}
+			
+			/* Create a custom radio button */
+			.checkmark {
+			  position: absolute;
+			  top: 5px;
+			  left: -8px;
+			  height: 15px;
+			  width: 15px;
+			  background-color: #eee;
+			  border-radius: 50%;
+			}
+			
+			/* On mouse-over, add a grey background color */
+			.container2:hover input ~ .checkmark {
+			  background-color: lightblue;
+			}
+			
+			/* When the radio button is checked, add a blue background */
+			.container2 input:checked ~ .checkmark {
+			  background-color: #2196F3;
+			}
+			
+			/* Create the indicator (the dot/circle - hidden when not checked) */
+			.checkmark:after {
+			  content: "";
+			  position: absolute;
+			  display: none;
+			}
+			
+			/* Show the indicator (dot/circle) when checked */
+			.container2 input:checked ~ .checkmark:after {
+			  display: block;
+			}
+			
+			/* Style the indicator (dot/circle) */
+			.container2 .checkmark:after {
+			 	top: 5px;
+				left: 5px;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background: white;
+			}
+			.table{
+				border-style : hidden!important;
+				border:0;
+			}			
+			.label{
+				color:white;
+				font-size:18px;
+				margin: 12px 10px;
+			}

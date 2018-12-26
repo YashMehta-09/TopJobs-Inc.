@@ -1,0 +1,5 @@
+create database topjobs;
+use topjobs;
+create table user(usertype varchar(15) not null,firstname varchar(10) not null,middlename varchar(10),lastname varchar(10) not null,dateofbirth date not null,gender varchar(6) not null,email varchar(30) Primary key,password varchar(15) not null);
+create table department(id varchar(10) primary key ,name varchar(15) not null);
+insert into department values('D0001','MK1');
